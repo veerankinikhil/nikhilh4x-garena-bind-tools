@@ -35,10 +35,11 @@ def load_keys_db():
 
     default_keys = {
         "GBIND-PERM-8899": {"expire_at": None, "label": "Permanent Master Key (Never Expires)"},
-        "GBIND-10M-719204": {"expire_at": 1788669960, "label": "10-Minute Access Key"},
-        "GBIND-1H-840291": {"expire_at": 1788672960, "label": "1-Hour Access Key"},
-        "GBIND-1D-389102": {"expire_at": 1788755760, "label": "1-Day Access Key"},
-        "GBIND-2D-958103": {"expire_at": 1788842160, "label": "2-Day Access Key"}
+        "GBIND-5D-839201": {"expire_at": 1790915310, "label": "5-Day Access Key (Expires Oct 2, 2026 09:58 AM IST)"},
+        "GBIND-2D-471092": {"expire_at": 1790656110, "label": "2-Day Access Key (Expires Sept 29, 2026 09:58 AM IST)"},
+        "GBIND-1D-928371": {"expire_at": 1790569710, "label": "1-Day Access Key (Expires Sept 28, 2026 09:58 AM IST)"},
+        "GBIND-1H-391820": {"expire_at": 1790486910, "label": "1-Hour Access Key (Expires Sept 27, 2026 10:58 AM IST)"},
+        "GBIND-10M-619284": {"expire_at": 1790483910, "label": "10-Minute Access Key (Expires Sept 27, 2026 10:08 AM IST)"}
     }
     save_keys_db(default_keys)
     return default_keys
