@@ -134,7 +134,7 @@ class ProxyHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 err_msg = json.dumps({
                     "error": "INVALID_API_KEY",
-                    "message": "Invalid API Key! Please enter a valid Access Key (Contact Telegram @Robin444s for Key)."
+                    "message": "Invalid API Key! Please enter a valid Access Key."
                 }).encode('utf-8')
                 self.wfile.write(err_msg)
                 return
@@ -149,7 +149,7 @@ class ProxyHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 err_msg = json.dumps({
                     "error": "API_KEY_EXPIRED",
-                    "message": f"This API Key ({user_key}) has EXPIRED! Please contact Telegram @Robin444s for a new key."
+                    "message": f"This API Key ({user_key}) has EXPIRED! Please contact administrator for a new key."
                 }).encode('utf-8')
                 self.wfile.write(err_msg)
                 return

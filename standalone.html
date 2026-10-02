@@ -316,7 +316,6 @@
         <h1 style="font-size: 1.35rem; font-weight: 900; background: linear-gradient(to right, #fff, var(--accent-cyan), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: 'Outfit', sans-serif;">
           GARENA BIND TOOLS
         </h1>
-        <p style="font-size: 0.85rem; color: var(--accent-cyan); font-family: 'Share Tech Mono', monospace; font-weight: 700;">Telegram Admin: @Robin444s</p>
       </div>
     </div>
   </header>
@@ -349,7 +348,7 @@
 
           <div class="form-group" style="margin-bottom: 0.8rem;">
             <label>API Key</label>
-            <input type="text" id="cancelBindApiKeyInput" value="" placeholder="Enter your API Key (Contact Telegram @Robin444s for Key)">
+            <input type="text" id="cancelBindApiKeyInput" value="" placeholder="Enter your API Key">
           </div>
 
           <div class="form-group">
@@ -367,13 +366,13 @@
           <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.8rem;">📧 Single Unsubscribe</h2>
           <div style="background: rgba(255, 158, 0, 0.08); border: 1px solid rgba(255, 158, 0, 0.3); border-radius: var(--radius-md); padding: 1.75rem 1.25rem; text-align: center;">
             <div style="font-size: 2.8rem; margin-bottom: 0.6rem;">🔒</div>
-            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--accent-amber); margin-bottom: 0.6rem; letter-spacing: 0.5px;">CONTACT OWNER TO USE THIS FEATURE</h3>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--accent-amber); margin-bottom: 0.6rem; letter-spacing: 0.5px;">CONTACT ADMINISTRATOR TO USE THIS FEATURE</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;">
-              Single Unsubscribe feature is locked. Please contact the owner on Telegram to get access or run this feature.
+              Single Unsubscribe feature is locked. Please contact the administrator to get access or run this feature.
             </p>
-            <a href="https://t.me/Robin444s" target="_blank" class="btn-gradient" style="text-decoration: none; display: inline-flex; background: linear-gradient(135deg, var(--accent-amber), var(--accent-purple)); width: 100%; box-shadow: 0 0 20px rgba(255, 158, 0, 0.3);">
-              💬 Contact Owner on Telegram (@Robin444s)
-            </a>
+            <div class="btn-gradient" style="display: inline-flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--accent-amber), var(--accent-purple)); width: 100%; box-shadow: 0 0 20px rgba(255, 158, 0, 0.3); opacity: 0.85; cursor: default;">
+              🔒 Locked Feature
+            </div>
           </div>
         </div>
 
@@ -382,13 +381,13 @@
           <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--accent-pink); margin-bottom: 0.8rem;">📧 Double Unsubscribe</h2>
           <div style="background: rgba(247, 37, 133, 0.08); border: 1px solid rgba(247, 37, 133, 0.3); border-radius: var(--radius-md); padding: 1.75rem 1.25rem; text-align: center;">
             <div style="font-size: 2.8rem; margin-bottom: 0.6rem;">🔒</div>
-            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--accent-pink); margin-bottom: 0.6rem; letter-spacing: 0.5px;">CONTACT OWNER TO USE THIS FEATURE</h3>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--accent-pink); margin-bottom: 0.6rem; letter-spacing: 0.5px;">CONTACT ADMINISTRATOR TO USE THIS FEATURE</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;">
-              Double Unsubscribe feature is locked. Please contact the owner on Telegram to get access or run this feature.
+              Double Unsubscribe feature is locked. Please contact the administrator to get access or run this feature.
             </p>
-            <a href="https://t.me/Robin444s" target="_blank" class="btn-gradient" style="text-decoration: none; display: inline-flex; background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple)); width: 100%; box-shadow: 0 0 20px rgba(247, 37, 133, 0.3);">
-              💬 Contact Owner on Telegram (@Robin444s)
-            </a>
+            <div class="btn-gradient" style="display: inline-flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple)); width: 100%; box-shadow: 0 0 20px rgba(247, 37, 133, 0.3); opacity: 0.85; cursor: default;">
+              🔒 Locked Feature
+            </div>
           </div>
         </div>
 
@@ -637,7 +636,7 @@
   </main>
 
   <footer>
-    GARENA BIND TOOLS &bull; Contact Telegram @Robin444s
+    GARENA BIND TOOLS &bull; All Rights Reserved
   </footer>
 
   <script>
@@ -679,7 +678,7 @@
 
         const res = await fetch(requestUrl.toString(), opts);
         let text = await res.text();
-        text = text.replace(/t\.me\/SiamBhau/gi, "t.me/Robin444s").replace(/SiamBhau/gi, "Telegram Admin @Robin444s").replace(/siambhau/gi, "Robin444s").replace(/admin69/gi, "Robin444s").replace(/eu\.cc/gi, "onrender.com");
+        text = text.replace(/t\.me\/[a-zA-Z0-9_]+/gi, "Support").replace(/SiamBhau/gi, "Admin").replace(/siambhau/gi, "admin").replace(/admin69/gi, "admin").replace(/eu\.cc/gi, "onrender.com");
         try {
           const json = JSON.parse(text);
           viewer.textContent = JSON.stringify(json, null, 2);
@@ -706,7 +705,7 @@
       const token = document.getElementById('tokenInput').value.trim();
       const apiKey = document.getElementById('cancelBindApiKeyInput').value.trim();
       
-      if (!apiKey) return alert('API Key required! Please enter your API key (Contact Telegram @Robin444s for Key).');
+      if (!apiKey) return alert('API Key required! Please enter your API key.');
       if (!token) return alert('Please enter Access Token!');
       
       sendRequest('/bind/cancelbind', 'POST', { access_token: token }, {}, apiKey);
@@ -718,7 +717,7 @@
       const email = document.getElementById('singleUnsubEmailInput').value.trim();
       let username = document.getElementById('singleUnsubUsernameInput').value.trim();
 
-      if (!apiKey) return alert('API Key required! Please enter your API key (Contact Telegram @Robin444s for Key).');
+      if (!apiKey) return alert('API Key required! Please enter your API key.');
       if (!email) return alert('Please enter target Gmail address!');
 
       if (!username) {
