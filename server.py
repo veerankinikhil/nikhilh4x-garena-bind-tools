@@ -308,10 +308,10 @@ class ProxyHandler(BaseHTTPRequestHandler):
                 }, indent=2).encode('utf-8')))
 
 def run_server():
-    server_address = ('', PORT)
+    server_address = ('0.0.0.0', PORT)
     httpd = ThreadingHTTPServer(server_address, ProxyHandler)
-    print(f"🚀 BindTools High-Speed Proxy Server running on http://127.0.0.1:{PORT}")
-    print(f"🔑 Clean Native Host Header Routing Active")
+    print(f"🚀 BindTools High-Speed Proxy Server running on port {PORT}", flush=True)
+    print("🔑 Clean Native Host Header Routing Active", flush=True)
     httpd.serve_forever()
 
 if __name__ == "__main__":
