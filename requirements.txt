@@ -1,2 +1,1 @@
-# Garena Bind Tools Requirements
-# Uses Python 3 Standard Library (no external pip dependencies needed)
+gunicorn
