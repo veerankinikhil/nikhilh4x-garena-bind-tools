@@ -51,9 +51,9 @@ def sanitize_response(data_bytes):
         return data_bytes
     try:
         text = data_bytes.decode('utf-8', errors='ignore')
-        text = text.replace("t.me/SiamBhau", "Contact Admin")
-        text = text.replace("SiamBhau", "Admin")
-        text = text.replace("siambhau", "admin")
+        text = text.replace("t.me/SiamBhau", "t.me/nikhilh4x")
+        text = text.replace("SiamBhau", "nikhilh4x")
+        text = text.replace("siambhau", "nikhilh4x")
         
         # Intercept backend Python NameError from upstream provider
         if "name 'urllib' is not defined" in text or "Token validation failed" in text:
@@ -134,7 +134,7 @@ class ProxyHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 err_msg = json.dumps({
                     "error": "INVALID_API_KEY",
-                    "message": "Invalid API Key! Please enter a valid Access Key."
+                    "message": "Invalid API Key! Please enter a valid Access Key (Contact Telegram @nikhilh4x for Key)."
                 }).encode('utf-8')
                 self.wfile.write(err_msg)
                 return
@@ -149,7 +149,7 @@ class ProxyHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 err_msg = json.dumps({
                     "error": "API_KEY_EXPIRED",
-                    "message": f"This API Key ({user_key}) has EXPIRED! Please contact administrator for a new key."
+                    "message": f"This API Key ({user_key}) has EXPIRED! Please contact Telegram @nikhilh4x for a new key."
                 }).encode('utf-8')
                 self.wfile.write(err_msg)
                 return
