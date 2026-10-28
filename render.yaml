@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: nikhilh4x
+    name: nikhilh4x-tools
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
