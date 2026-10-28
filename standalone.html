@@ -316,7 +316,7 @@
         <h1 style="font-size: 1.35rem; font-weight: 900; background: linear-gradient(to right, #fff, var(--accent-cyan), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: 'Outfit', sans-serif;">
           NIKHILH4X GARENA BIND TOOLS
         </h1>
-        <p style="font-size: 0.85rem; color: var(--accent-cyan); font-family: 'Share Tech Mono', monospace; font-weight: 700;">Telegram Admin: @nikhilh4x</p>
+        <p style="font-size: 0.85rem; color: var(--accent-cyan); font-family: 'Share Tech Mono', monospace; font-weight: 700;">Telegram Admin: @nikhilh4xx</p>
       </div>
     </div>
   </header>
@@ -349,7 +349,7 @@
 
           <div class="form-group" style="margin-bottom: 0.8rem;">
             <label>API Key</label>
-            <input type="text" id="cancelBindApiKeyInput" value="" placeholder="Enter your API Key (Contact Telegram @nikhilh4x for Key)">
+            <input type="text" id="cancelBindApiKeyInput" value="" placeholder="Enter your API Key (Contact Telegram @nikhilh4xx for Key)">
           </div>
 
           <div class="form-group">
@@ -371,8 +371,8 @@
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;">
               Single Unsubscribe feature is locked. Please contact the owner on Telegram to get access or run this feature.
             </p>
-            <a href="https://t.me/nikhilh4x" target="_blank" class="btn-gradient" style="text-decoration: none; display: inline-flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--accent-amber), var(--accent-purple)); width: 100%; box-shadow: 0 0 20px rgba(255, 158, 0, 0.3);">
-              💬 Contact Owner on Telegram (@nikhilh4x)
+            <a href="https://t.me/nikhilh4xx" target="_blank" class="btn-gradient" style="text-decoration: none; display: inline-flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--accent-amber), var(--accent-purple)); width: 100%; box-shadow: 0 0 20px rgba(255, 158, 0, 0.3);">
+              💬 Contact Owner on Telegram (@nikhilh4xx)
             </a>
           </div>
         </div>
@@ -386,8 +386,8 @@
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;">
               Double Unsubscribe feature is locked. Please contact the owner on Telegram to get access or run this feature.
             </p>
-            <a href="https://t.me/nikhilh4x" target="_blank" class="btn-gradient" style="text-decoration: none; display: inline-flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple)); width: 100%; box-shadow: 0 0 20px rgba(247, 37, 133, 0.3);">
-              💬 Contact Owner on Telegram (@nikhilh4x)
+            <a href="https://t.me/nikhilh4xx" target="_blank" class="btn-gradient" style="text-decoration: none; display: inline-flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple)); width: 100%; box-shadow: 0 0 20px rgba(247, 37, 133, 0.3);">
+              💬 Contact Owner on Telegram (@nikhilh4xx)
             </a>
           </div>
         </div>
@@ -637,11 +637,11 @@
   </main>
 
   <footer>
-    NIKHILH4X GARENA BIND TOOLS &bull; Contact Telegram @nikhilh4x
+    NIKHILH4X GARENA BIND TOOLS &bull; Contact Telegram @nikhilh4xx
   </footer>
 
   <script>
-    const BASE_URL = window.location.origin.startsWith('http') ? window.location.origin + "/api/proxy" : "https://robin-garena-bind-tools.onrender.com/api/proxy";
+    const BASE_URL = window.location.origin.startsWith('http') ? window.location.origin + "/api/proxy" : "https://nikhilh4x.onrender.com/api/proxy";
 
     function switchTab(tabName) {
       const tabs = ['cancelbind', 'singleunsub', 'doubleunsub', 'changebind', 'unbind', 'addbind', 'bindinfo', 'platforms', 'revoke', 'player', 'bancheck'];
@@ -679,7 +679,7 @@
 
         const res = await fetch(requestUrl.toString(), opts);
         let text = await res.text();
-        text = text.replace(/t\.me\/[a-zA-Z0-9_]+/gi, "t.me/nikhilh4x").replace(/SiamBhau/gi, "Telegram Admin @nikhilh4x").replace(/siambhau/gi, "nikhilh4x").replace(/admin69/gi, "nikhilh4x").replace(/eu\.cc/gi, "onrender.com");
+        text = text.replace(/t\.me\/[a-zA-Z0-9_]+/gi, "t.me/nikhilh4xx").replace(/SiamBhau/gi, "Telegram Admin @nikhilh4xx").replace(/siambhau/gi, "nikhilh4x").replace(/admin69/gi, "nikhilh4x").replace(/eu\.cc/gi, "onrender.com");
         try {
           const json = JSON.parse(text);
           viewer.textContent = JSON.stringify(json, null, 2);
@@ -706,7 +706,7 @@
       const token = document.getElementById('tokenInput').value.trim();
       const apiKey = document.getElementById('cancelBindApiKeyInput').value.trim();
       
-      if (!apiKey) return alert('API Key required! Please enter your API key (Contact Telegram @nikhilh4x for Key).');
+      if (!apiKey) return alert('API Key required! Please enter your API key (Contact Telegram @nikhilh4xx for Key).');
       if (!token) return alert('Please enter Access Token!');
       
       sendRequest('/bind/cancelbind', 'POST', { access_token: token }, {}, apiKey);
@@ -718,7 +718,7 @@
       const email = document.getElementById('singleUnsubEmailInput').value.trim();
       let username = document.getElementById('singleUnsubUsernameInput').value.trim();
 
-      if (!apiKey) return alert('API Key required! Please enter your API key (Contact Telegram @nikhilh4x for Key).');
+      if (!apiKey) return alert('API Key required! Please enter your API key (Contact Telegram @nikhilh4xx for Key).');
       if (!email) return alert('Please enter target Gmail address!');
 
       if (!username) {
